@@ -1,0 +1,42 @@
+.catalogpage__path {
+  font-size: 18px;
+  padding: 20px 20px 20px 5px;
+color: #fff;
+  background: var(--dark-background-color);
+}
+
+.catalogpage__catalogs {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: 4%;
+}
+
+.catalogpage__catalog {
+  width: 50%;
+  height: 150px;
+  box-sizing: border-box;
+  padding: 5px;
+  position: relative;
+}
+
+.catalogpage__catalog__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.catalogpage__catalog__title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+}

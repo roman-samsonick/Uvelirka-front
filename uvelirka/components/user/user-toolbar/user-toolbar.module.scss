@@ -1,0 +1,64 @@
+.usertoolbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.usertoolbar__usericon {
+  fill: white;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+.usertoolbar__user {
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
+  cursor: pointer;
+  align-items: center;
+
+  &:hover {
+    .usertoolbar__usericon {
+      fill: var(--dark-color);
+    }
+
+    color: var(--dark-color);
+    background-color: var(--light-background-color);
+  }
+}
+
+.usertoolbar__carticoncontainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+}
+
+.usertoolbar__carticon {
+  margin-left: 10px;
+  flex-shrink: 0;
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+  cursor: pointer;
+  stroke: var(--light-color);
+
+  &:hover {
+    background-color: var(--light-background-color);
+    stroke: var(--dark-color);
+  }
+}
+
+.usertoolbar__signouticon {
+  fill: var(--light-color);
+  margin-left: 10px;
+  cursor: pointer;
+  padding: 5px;
+  flex-shrink: 0;
+
+  &:hover {
+    fill: var(--dark-color);
+    background-color: var(--light-background-color);
+  }
+}

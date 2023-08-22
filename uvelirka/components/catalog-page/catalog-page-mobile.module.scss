@@ -1,0 +1,33 @@
+.catalogpage__productssection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  margin-top: 15px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.content__wrapper {
+}
+
+.catalogpage__paginatorsection {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 60px;
+  margin-bottom: 200px;
+}
+
+.productrow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100vw;
+  box-sizing: border-box;
+}

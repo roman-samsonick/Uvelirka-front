@@ -1,0 +1,144 @@
+.header_mobile__container {
+  height: 65px;
+  background-color: #333333;
+  display: flex;
+  flex-direction: row;
+  color: var(--light-color);
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header_mobile__title {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+  font-size: 36px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.header_mobile__icon_button {
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:active {
+    background-color: #3a3a3a;
+  }
+}
+
+.header_mobile__burger_icon {
+  width: 35px;
+  height: 35px;
+  stroke: var(--header-mobile-icon-color);
+}
+
+.header_mobile__user_icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--header-mobile-icon-color);
+}
+
+.header_mobile__user_avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.header_mobile__search_icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--header-mobile-icon-color);
+}
+
+.header_mobile__like_icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--header-mobile-icon-color);
+}
+
+.account_menu__container {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(42, 42, 42, 0.13);
+  backdrop-filter: blur(3px);
+  opacity: 0;
+  transition: background-color 0.3s, opacity .5s;
+}
+
+.account_menu__container___active {
+  z-index: 2;
+  opacity: 1;
+}
+
+.account_menu {
+  position: absolute;
+  top: 0;
+  right: -50vw;
+  margin-top: 60px;
+  display: none;
+  width: 150px;
+  background-color: var(--dark-background-color);
+  transition: right .3s;
+}
+
+.account_menu___active {
+  display: block;
+  right: 0;
+}
+
+.auth_menu__google_icon {
+  width: 25px;
+  height: 25px;
+  fill: #757575;
+}
+
+.auth__menu__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.auth__menu__item {
+  display: flex;
+  align-items: flex-end;
+  gap: 3px;
+  font-size: 20px;
+  padding: 10px;
+
+  &:active {
+    background-color: #3a3a3a;
+  }
+}
+
+.user__menu__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 10px;
+}
+
+.user__menu__items {
+  display: flex;
+  flex-direction: column;
+  gap: 5px
+}
+
+.user__menu__item {
+  display: flex;
+  align-items: flex-end;
+  gap: 3px;
+  font-size: 16px;
+  padding: 5px 10px;
+
+  &:active {
+    background-color: #3a3a3a;
+  }
+}

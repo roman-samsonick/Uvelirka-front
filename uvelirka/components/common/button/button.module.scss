@@ -1,0 +1,33 @@
+.button {
+  padding: 10px 20px;
+  border: 1px solid black;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  width: fit-content;
+
+  &:hover {
+    background-color: rgb(128, 128, 128, 0.5);
+  }
+
+  &.button__filled {
+    background-color: var(--dark-background-color);
+    color: var(--light-color);
+
+    &:hover {
+      background-color: var(--light-background-color);
+      color: var(--dark-color);
+    }
+  }
+
+  &.button__small {
+    padding: 5px 10px;
+    font-size: 15px;
+  }
+}

@@ -1,0 +1,125 @@
+@keyframes mobile_filters__container {
+  0% {
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1
+  }
+}
+
+@keyframes mobile_filters {
+  0% {
+    left: -60vw
+  }
+
+  20% {
+    left: -60vw
+  }
+
+  100% {
+    left: 0
+  }
+}
+
+
+.filters_mobile__container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  opacity: 0;
+  z-index: 10;
+  display: none;
+  justify-content: center;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.24);
+}
+
+.filters_mobile__container___active {
+  display: flex;
+  opacity: 1;
+  animation: mobile_filters__container .5s;
+}
+
+.filters_mobile {
+  height: 100vh;
+  width: 60vw;
+  flex-direction: column;
+  padding: 20px 30px 30px 20px;
+  background-color: var(--dark-background-color);
+  position: absolute;
+  left: -100vw;
+  display: none;
+}
+
+.filters_mobile___active {
+  left: 0;
+  display: flex;
+  animation: mobile_filters .5s;
+}
+
+.filter_mobile {
+  display: flex;
+  flex-direction: column;
+
+  & + .filter_mobile {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid var(--product-info-border-color);
+  }
+}
+
+.filters_mobile__title {
+  font-size: 18px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--light-color);
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #fff;
+  text-transform: uppercase;
+}
+
+.filter_mobile__header {
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.filters_mobile__open_button {
+  margin-top: 10px;
+  padding: 5px 5px 5px 10px;
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  color: #050505;
+  margin-left: 5px;
+  border: 1px solid var(--product-info-border-color);
+}
+
+.filters_mobile__filter_icon {
+  width: 20px;
+  height: 20px;
+  stroke-width: 0.5;
+  fill: #1c1c1c;
+  margin-left: 10px;
+}
+
+.filters_mobile__close_icon {
+  width: 20px;
+  height: 20px;
+  stroke-width: 0.5;
+  fill: #ffffff;
+}

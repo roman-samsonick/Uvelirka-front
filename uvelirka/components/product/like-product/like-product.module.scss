@@ -1,0 +1,124 @@
+.likeproduct {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 2;
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--light-background-color);
+  border: 1px solid var(--dark-color);
+  -webkit-tap-highlight-color: transparent;
+
+  .likeproduct__likeicon {
+    display: block;
+  }
+
+  .likeproduct__unlikeicon {
+    display: none;
+  }
+
+  .likeproduct__addlikeicon {
+    display: none;
+  }
+
+  @media (hover: hover) {
+    &:hover {
+      background-color: #e57f7f;
+
+      .likeproduct__likeicon {
+        display: none;
+      }
+
+      .likeproduct__addlikeicon {
+        display: block;
+      }
+    }
+  }
+
+  &.likeproduct_liked {
+    background-color: var(--liked-color);
+
+    .likeproduct__likeicon {
+      fill: var(--light-color);
+    }
+
+    @media (hover: hover) {
+      &:hover {
+        background-color: var(--dark-color);
+
+        .likeproduct__likeicon {
+          display: none;
+        }
+
+        .likeproduct__addlikeicon {
+          display: none;
+        }
+
+        .likeproduct__unlikeicon {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+.likeproduct__mobile {
+  top: 0;
+  right: 0;
+  border: 0;
+  background-color: transparent;
+
+  &.likeproduct_liked {
+    background-color: transparent;
+    .likeproduct__likeicon {
+
+      fill: red;
+    }
+  }
+}
+
+
+.likeproduct__addlikeicon {
+  width: 30px;
+  height: 30px;
+  fill: var(--dark-color);
+}
+
+.likeproduct__likeicon {
+  width: 30px;
+  height: 30px;
+  fill: var(--dark-color);
+}
+
+.likeproduct__unlikeicon {
+  width: 30px;
+  height: 30px;
+  fill: var(--light-color);
+}
+
+
+.likeproduct__mobile {
+  top: 5px;
+  right: 5px;
+  border: 0;
+  background-color: transparent;
+
+  &.likeproduct_liked {
+    background-color: transparent;
+
+    .likeproduct__likeicon {
+      fill: red;
+    }
+  }
+}
+
+.likeproduct__liked_mobile {
+  width: 30px;
+  height: 30px;
+  fill: red;
+}
